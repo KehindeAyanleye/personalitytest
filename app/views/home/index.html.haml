@@ -1,0 +1,21 @@
+%h2 Take the test!
+
+= form_tag results_path do
+  - if @answer.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@answer.errors.count, "error")} prohibited this test from being saved:"
+      %ul
+        - @answer.errors.full_messages.each do |msg|
+          %li= msg
+  %ol.questions
+    - QUESTIONS.each_with_index do |question, i|
+      %li
+        = question["text"]
+        %ul.answers
+          %li
+            = radio_button_tag "answers[#{i}]", "a", (@answer.answers["#{i}"] == "a" rescue false)
+            = question["a"]["text"]
+          %li
+            = radio_button_tag "answers[#{i}]", "b", (@answer.answers["#{i}"] == "b" rescue false)
+            = question["b"]["text"]
+  = submit_tag

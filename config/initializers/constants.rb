@@ -1,0 +1,1 @@
+QUESTIONS = YAML::load(File.open("#{Rails.root}/lib/questions.yml"))

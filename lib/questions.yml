@@ -1,0 +1,24 @@
+-
+  text: I would rather
+  a:
+    text: Solve a new and complicated problem.
+    letter: n
+  b:
+    text: Work on something I have done before.
+    letter: s
+-
+  text: I like to
+  a:
+    text: Work alone in a quiet place.
+    letter: i
+  b:
+    text: Be where the action is.
+    letter: e
+-
+  text: I want a boss who
+  a:
+    text: Establishes and applies criteria in decisions.
+    letter: t
+  b:
+    text: Considers indiviual needs and makes exceptions.
+    letter: f

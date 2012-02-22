@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title Personalitytest
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #header.container
+      .span12
+        %h1 Personality Test
+    #main.container
+      .span12
+        = yield
